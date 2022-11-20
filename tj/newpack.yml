@@ -1,0 +1,14 @@
+---
+ - name: installing httpd
+   hosts: all
+   tasks:
+           - name: installing {{ p }}
+             yum:
+                     name: "{{ p }}"
+                     state: present
+           - name: Starting {{ s }}
+             service:
+                     name: "{{ s }}"
+                     state: started
+                     enabled: yes
+       

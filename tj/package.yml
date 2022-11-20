@@ -1,0 +1,10 @@
+---
+ - hosts: test
+   gather_facts: no
+   tasks:
+           - yum:
+                   name:
+                           - httpd
+                           - bind
+                           - vsftpd
+                   state: latest

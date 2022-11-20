@@ -1,0 +1,19 @@
+---
+ - name: installing httpd
+   hosts: all
+   vars_files:
+           - var.yml
+   tasks:
+           - name: installing {{ p }}
+             yum:
+                     name: "{{ p }}"
+                     state: present
+           - name: Starting {{ s }}
+             service:
+                     name: "{{ s }}"
+                     state: started
+                     enabled: yes
+           - copy:
+                   src: /tj/index.html
+                   dest: /var/www/html/index.html
+       

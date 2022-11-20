@@ -1,0 +1,5 @@
+---
+ - hosts: test
+   tasks:
+           - debug:
+                   msg: "Welcome to {{ ansible_default_ipv4 }}, Hostname of the machine is {{ ansible_hostname }} " 

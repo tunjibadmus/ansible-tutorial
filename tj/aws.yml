@@ -1,0 +1,7 @@
+---
+ - hosts: aws
+   tasks:
+           - file:
+                   path: /cdrom
+                   state: directory
+

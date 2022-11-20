@@ -1,0 +1,27 @@
+---
+ - hosts: all
+   vars:
+           - users:
+                   khan:
+                           fname: Shahrukh
+                           homedir: /srk
+                   abadmus:
+                           fname: Tunji
+                           homedir: /tja
+
+           - users_khan_fname: Shahrukh
+           - users_khan_homedir: /srk
+           - users_abadmus_fname: Tunji
+           - users_abadmus_homedir: /tja
+
+   tasks:
+           - user:
+                   name: "{{ users.khan.fname }}"
+                   home: "{{ users.khan.homedir }}"
+                   state: present
+
+           - user:
+                   name: "{{ users.abadmus.fname }}"
+                   home: "{{ users.abadmus.homedir}}"
+                   state: present
+
