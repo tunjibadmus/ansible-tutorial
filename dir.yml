@@ -1,0 +1,13 @@
+---
+ - hosts: test
+   tasks:
+           - file:
+                   path: ~/.newdir
+                   state: directory
+                   mode: '0755'
+                  
+
+
+           - file:
+                   path: ~/.newdir/myfile
+                   mode: '0644'

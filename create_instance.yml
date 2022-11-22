@@ -1,0 +1,13 @@
+---
+ - hosts: localhost
+   tasks:
+           - name: Creating ec2 insatnces
+             ec2:
+                     aws_access_key: AKIAUAMAAO75XNS5C6IB
+                     aws_secret_key: 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
+                     image: ami-05723c3b9cf4bf4ff
+                     instance_type: t2.micro
+                     region: us-east-1
+                     key_name: testkp2
+                     count: 2
+                     wait: yes 

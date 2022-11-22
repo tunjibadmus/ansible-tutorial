@@ -1,0 +1,100 @@
+550  stat india.txt 
+  551  mkdir morning
+  552  touch abe.txt sana.txt tj.txt
+  553  ls
+  554  rmdir morning/
+  555  ls
+  556  rm abe.txt 
+  557  rm -f tj.txt 
+  558  mkdir -p morning/yesido
+  559  rmdir morning/
+  560  rm -f sana.txt 
+  561  ls /bin
+  562  rm -f morning/
+  563  rm -r morning/
+  564  rm -rf morning/
+  565  ls
+  566  tree ansible-tutorial/
+  567  tree Documents/
+  568  history
+  569  touch indext.html
+  570  cp -il Documents/
+  571  cp -il indext.html Documents/
+  572  ls -il inde
+  573  ls -il indext.html 
+  574  ls -il Documents/indext.html 
+  575  mv india.txt Documents/
+  576  ls
+  577  ls -il Documents/india.txt 
+  578  cp Downloads/ Documents/
+  579  cp -r Downloads/ Documents/
+  580  ls Downloads/
+  581  ls -il Documents/
+  582  ls -il Downloads/
+  583  ls
+  584  mkdir morning
+  585  cp -rv Downloads/ morning/
+  586  history
+  587  ansible -m copy -a "/ansible/tj" 192.168.8.153
+  588  ansible-doc copy
+  589  ansible-doc copy "src=/ansible-tutorials/tj dst=192.168.8.155/~"
+  590  ansible -m copy -a "src=/ansible-tutorials/tj dst=192.168.8.155/~"
+  591  ansible -m copy -a "src=/ansible-tutorials/tj dst=192.168.8.155/root/"
+  592  cd ansible-tutorial/
+  593  ls
+  594  ansible -m fetch -a "lsblk" 192.168.8.155
+  595  ansible -m fetch -a "lsblk" test
+  596  ansible -m ping -a "lsblk" test
+  597  ansible -m ping test
+  598  ansible -m ping -a "lsblk" test
+  599  ansible -m fetch -a "lsblk" test
+  600  ls -lls -ld /usr/bin
+  601  cd
+  602  ls
+  603  echo " Welcome to India from srl and teejays" indext.html 
+  604  cat indext.html 
+  605  echo >  "Welcome to India from srl and teejays" indext.html 
+  606  cat indext.html 
+  607  echo "Welcome to India from srl and teejays" >indext.html 
+  608  cat indext.html 
+  609  mv indext.html index.html
+  610  ln index.html /root/Downloads/hlink
+  611  ls -l Downloads/
+  612  cat /Downlo
+  613  ls -l /Downloads
+  614  cd /root/Downloads/
+  615  ls
+  616  vim hlink 
+  617  cat /root/index.html 
+  618  ls -il /root/index.html 
+  619  ls -l hlink 
+  620  ls -il hlink 
+  621  stat hlink 
+  622  rm  /root/index.html 
+  623  rm  -f /root/index.html 
+  624  ls -il hlink 
+  625  cd
+  626  ln -s /root/Downloads/ /slink
+  627  ls -il /slink/
+  628  ls -il /root/Downloads/
+  629  ls /
+  630  ls -l 
+  631  ls -l  /
+  632  ls -l /root/Downloads/
+  633  ls 
+  634  ls -l
+  635  cd Downloads/
+  636  ls
+  637  cd ls -l /root/Downloads/
+  638  cd /slink/
+  639  ls -l
+  640  ls -il
+  641  cd /bin
+  642  ls -l
+  643  cd /usr/sbin
+  644  ls -l
+  645  man ls
+  646  pinfo ls
+  647  pinfo vdo
+  648  history
+
